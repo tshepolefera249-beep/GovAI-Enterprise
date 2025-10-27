@@ -1,3 +1,6 @@
+from security.advanced_security import AdvancedSecurity
+from deployment.deployment_automation import DeploymentAutomation
+from deployment.performance_monitor import PerformanceMonitor
 from brain.calendar_optimizer import CalendarOptimizer
 from brain.decision_support import DecisionSupport
 from brain.meeting_analyzer import MeetingAnalyzer
@@ -250,3 +253,6 @@ if __name__ == "__main__":
     govai.demonstrate_advanced_workflow()
     govai.demonstrate_intelligent_workflow()
     print("\n🚀 GOVAI ENTERPRISE - FULLY OPERATIONAL WITH INTELLIGENT SCHEDULING & DECISION SUPPORT!")
+    self.advanced_security = AdvancedSecurity()
+self.deployment_automation = DeploymentAutomation()
+self.performance_monitor = PerformanceMonitor()
