@@ -256,3 +256,60 @@ if __name__ == "__main__":
     self.advanced_security = AdvancedSecurity()
 self.deployment_automation = DeploymentAutomation()
 self.performance_monitor = PerformanceMonitor()
+def demonstrate_enterprise_features(self):
+    """Show GovAI's enterprise security and deployment capabilities"""
+    print("\n🎯 DEMONSTRATING ENTERPRISE SECURITY & DEPLOYMENT")
+    print("=" * 50)
+    
+    # 1. Security Monitoring
+    print("\n1. 🔒 ADVANCED SECURITY MONITORING")
+    security_events = [
+        self.advanced_security.monitor_system_activity("city_mgr_1", "email_read", "internal"),
+        self.advanced_security.monitor_system_activity("admin_1", "user_permission_change", "secret"),
+        self.advanced_security.monitor_system_activity("user_5", "document_export", "confidential")
+    ]
+    
+    security_report = self.advanced_security.generate_security_report()
+    print("Security Report:", {
+        "total_events": security_report["total_security_events"],
+        "high_risk_events": security_report["high_risk_events"],
+        "threat_level": security_report["current_threat_level"]
+    })
+    
+    # 2. Deployment Automation
+    print("\n2. 🚀 AUTOMATED DEPLOYMENT PLANNING")
+    deployment_plan = self.deployment_automation.generate_deployment_plan("production", "medium")
+    print("Deployment Timeline:", deployment_plan["timeline_estimate"])
+    print("Infrastructure:", deployment_plan["infrastructure_requirements"])
+    print("Security Configs:", deployment_plan["security_configurations"][:2])
+    
+    # 3. Performance Monitoring
+    print("\n3. 📊 PERFORMANCE MONITORING")
+    performance_metrics = {
+        "response_time_ms": 120,
+        "cpu_usage_percent": 45,
+        "memory_usage_percent": 60,
+        "error_rate_percent": 0.5,
+        "active_users": 25
+    }
+    
+    performance_data = self.performance_monitor.track_system_performance("govai_core", performance_metrics)
+    print("System Health:", performance_data["health_status"])
+    print("Alerts:", performance_data["alerts"])
+    
+    # 4. Docker Deployment
+    print("\n4. 🐳 DOCKER DEPLOYMENT READY")
+    docker_config = self.deployment_automation.generate_docker_config()
+    print("Deployment Commands Available:")
+    for cmd in docker_config["deployment_commands"]:
+        print(" ", cmd)
+    
+    return True
+    # RUN THE COMPLETE SYSTEM
+if __name__ == "__main__":
+    govai = GovAI().start()
+    govai.demonstrate_complete_workflow()
+    govai.demonstrate_advanced_workflow()
+    govai.demonstrate_intelligent_workflow()
+    govai.demonstrate_enterprise_features()
+    print("\n🚀 GOVAI ENTERPRISE - FULLY OPERATIONAL WITH ENTERPRISE SECURITY & DEPLOYMENT!")
