@@ -139,3 +139,43 @@ self.document_processor = DocumentProcessor()
 if __name__ == "__main__":
     govai = GovAI().start()
     govai.demonstrate_complete_workflow()
+def demonstrate_advanced_workflow(self):
+    """Show advanced GovAI capabilities"""
+    print("\n🎯 DEMONSTRATING ADVANCED GOVAI CAPABILITIES")
+    print("=" * 50)
+    
+    # 1. Document Analysis
+    print("\n1. 📄 ANALYZING GOVERNMENT DOCUMENT")
+    sample_policy = """
+    New City Environmental Policy
+    Findings: Current emissions exceed targets by 25%.
+    Recommendations: Implement green vehicle fleet, solar installations on city buildings.
+    Action Required: All departments must submit compliance plans within 60 days.
+    """
+    doc_analysis = self.document_processor.analyze_government_document(
+        sample_policy, "policy", "City Manager"
+    )
+    print("Document Analysis:", doc_analysis["key_findings"])
+    
+    # 2. Meeting Analysis
+    print("\n2. 🤝 ANALYZING COUNCIL MEETING")
+    meeting_transcript = """
+    The council discussed the new environmental policy. We decided to approve the solar initiative.
+    Sarah will coordinate with Public Works. Mike will handle vendor selection.
+    We agreed to review progress in 90 days.
+    """
+    meeting_analysis = self.meeting_analyzer.analyze_meeting_transcript(
+        meeting_transcript,
+        "City Council Policy Meeting",
+        ["Sarah Chen", "Mike Rodriguez", "Council Members"]
+    )
+    print("Meeting Decisions:", meeting_analysis["key_decisions"])
+    print("Action Items:", meeting_analysis["action_items"])
+    
+    return True
+    # RUN THE COMPLETE SYSTEM
+if __name__ == "__main__":
+    govai = GovAI().start()
+    govai.demonstrate_complete_workflow()
+    govai.demonstrate_advanced_workflow()
+    print("\n🚀 GOVAI ENTERPRISE - FULLY OPERATIONAL WITH ALL MODULES!")
