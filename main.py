@@ -181,3 +181,5 @@ if __name__ == "__main__":
     govai.demonstrate_complete_workflow()
     govai.demonstrate_advanced_workflow()
     print("\n🚀 GOVAI ENTERPRISE - FULLY OPERATIONAL WITH ALL MODULES!")
+    self.calendar_optimizer = CalendarOptimizer()
+self.decision_support = DecisionSupport()
