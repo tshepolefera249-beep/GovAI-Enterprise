@@ -1,3 +1,5 @@
+from brain.calendar_optimizer import CalendarOptimizer
+from brain.decision_support import DecisionSupport
 from brain.meeting_analyzer import MeetingAnalyzer
 from brain.document_processor import DocumentProcessor
 # main.py - COMPLETE GOVAI ENTERPRISE SYSTEM
