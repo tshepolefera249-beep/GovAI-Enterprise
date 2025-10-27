@@ -183,3 +183,70 @@ if __name__ == "__main__":
     print("\n🚀 GOVAI ENTERPRISE - FULLY OPERATIONAL WITH ALL MODULES!")
     self.calendar_optimizer = CalendarOptimizer()
 self.decision_support = DecisionSupport()
+
+def demonstrate_intelligent_workflow(self):
+    """Show GovAI's intelligent scheduling and decision support"""
+    print("\n🎯 DEMONSTRATING INTELLIGENT SCHEDULING & DECISION SUPPORT")
+    print("=" * 50)
+    
+    # 1. Calendar Optimization
+    print("\n1. 📅 CALENDAR OPTIMIZATION ANALYSIS")
+    sample_calendar = [
+        {"name": "Department Head Meeting", "duration": 2, "time": "Monday 9AM"},
+        {"name": "Budget Review", "duration": 1.5, "time": "Monday 2PM"},
+        {"name": "Public Hearing", "duration": 3, "time": "Tuesday 10AM"},
+        {"name": "Staff Training", "duration": 2, "time": "Tuesday 2PM"},
+        {"name": "Council Meeting", "duration": 2, "time": "Wednesday 1PM"}
+    ]
+    
+    calendar_analysis = self.calendar_optimizer.analyze_user_calendar(
+        "city_mgr_1", sample_calendar, "City Manager"
+    )
+    print("Meeting Hours/Week:", calendar_analysis["meeting_hours_per_week"])
+    print("Recommendations:", calendar_analysis["optimization_recommendations"][:2])
+    
+    # 2. Decision Support
+    print("\n2. 🤔 DECISION SUPPORT FOR BUDGET ALLOCATION")
+    budget_options = [
+        {
+            "name": "Infrastructure Focus",
+            "cost": 500000,
+            "timeline": "long", 
+            "public_benefit": "high",
+            "complexity": "high",
+            "impact": {"public": "high", "businesses": "medium", "employees": "low"}
+        },
+        {
+            "name": "Public Services Focus",
+            "cost": 350000,
+            "timeline": "medium",
+            "public_benefit": "medium", 
+            "complexity": "medium",
+            "impact": {"public": "medium", "businesses": "low", "employees": "high"}
+        }
+    ]
+    
+    decision_analysis = self.decision_support.analyze_decision(
+        "Annual budget allocation strategy",
+        budget_options,
+        "City Manager"
+    )
+    print("Recommended Option:", decision_analysis["recommended_option"]["option"]["name"])
+    print("Risk Assessment:", decision_analysis["risk_assessment"])
+    
+    # 3. Integrated Workflow
+    print("\n3. 🔄 INTEGRATED WORKFLOW DEMONSTRATION")
+    print("GovAI can now:")
+    print("✅ Optimize government schedules")
+    print("✅ Support complex decisions with data")
+    print("✅ Analyze risks and stakeholder impacts") 
+    print("✅ Provide implementation guidance")
+    
+    return True
+    # RUN THE COMPLETE SYSTEM
+if __name__ == "__main__":
+    govai = GovAI().start()
+    govai.demonstrate_complete_workflow()
+    govai.demonstrate_advanced_workflow()
+    govai.demonstrate_intelligent_workflow()
+    print("\n🚀 GOVAI ENTERPRISE - FULLY OPERATIONAL WITH INTELLIGENT SCHEDULING & DECISION SUPPORT!")
