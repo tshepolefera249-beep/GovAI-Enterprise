@@ -1,0 +1,18 @@
+{
+  "sample_users": [
+    {
+      "id": "city_mgr_1",
+      "name": "Sarah Chen",
+      "role": "City Manager",
+      "department": "Administration",
+      "challenges": ["too many meetings", "email overload", "complex decisions"]
+    },
+    {
+      "id": "policy_1", 
+      "name": "Mike Rodriguez",
+      "role": "Policy Analyst",
+      "department": "Policy & Research",
+      "challenges": ["research overload", "data analysis", "tight deadlines"]
+    }
+  ]
+}
