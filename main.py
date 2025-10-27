@@ -1,3 +1,5 @@
+from brain.meeting_analyzer import MeetingAnalyzer
+from brain.document_processor import DocumentProcessor
 # main.py - COMPLETE GOVAI ENTERPRISE SYSTEM
 from brain.user_profiler import UserProfiler
 from brain.email_assistant import EmailAssistant
@@ -130,6 +132,8 @@ class GovAI:
         print("\n" + "=" * 50)
         print("🎉 GOVAI ENTERPRISE WORKFLOW COMPLETE!")
         return True
+        self.meeting_analyzer = MeetingAnalyzer()
+self.document_processor = DocumentProcessor()
 
 # RUN THE COMPLETE SYSTEM
 if __name__ == "__main__":
